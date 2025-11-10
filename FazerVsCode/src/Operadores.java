@@ -16,5 +16,36 @@ public class Operadores{
             throw new ArithmeticException("Divisão por zero não permitida.");
         }
         return a / b;
-    }  
+    }
+
+    public float atribuicaoAdicao(float a, float b) {
+        a += b;
+        return a;
+    }
+
+    public float atribuicaoSubtracao(float a, float b) {
+        a -= b;
+        return a;
+    }
+
+    public float atribuicaoMultiplicacao(float a, float b) {
+        a *= b;
+        return a;
+    }
+
+    public float atribuicaoDivisao(float a, float b) {
+        if (b == 0) {
+            throw new ArithmeticException("Divisão por zero não permitida.");
+        }
+        a /= b;
+        return a;
+    }
+
+    public float atribuicaoModulo(float a, float b) {
+        if (b == 0) {
+            throw new ArithmeticException("Módulo por zero não permitido.");
+        }
+        a %= b;
+        return a;
+    }
 }
